@@ -1,0 +1,13 @@
+//////CLASSE//////
+En C++, une classe est comme une struct, mais avec des améliorations :
+
+Une classe peut contenir des données (comme dans une struct en C).
+Une classe peut aussi contenir des fonctions (appelées méthodes) qui manipulent les données de la classe.
+Une classe permet de protéger les données grâce à des niveaux d’accès (private, public, protected).
+
+ne classe est un concept qui permet d'organiser et de regrouper des données et des fonctions (méthodes) qui opèrent sur ces données. Elle est essentielle dans la programmation orientée objet (POO).
+
+//////OBJET//////
+Une classe est comme un plan ou un modèle : elle définit les caractéristiques (données ou attributs) et les comportements (méthodes ou fonctions) que tous les objets de ce type auront.
+Un objet est une version concrète de cette classe : c'est une entité réelle que le programme peut manipuler en utilisant ce modèle.
+
