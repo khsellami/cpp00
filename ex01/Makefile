@@ -6,11 +6,11 @@
 #    By: ksellami <ksellami@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/25 17:11:41 by ksellami          #+#    #+#              #
-#    Updated: 2024/11/25 17:51:12 by ksellami         ###   ########.fr        #
+#    Updated: 2024/11/29 13:44:46 by ksellami         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CPP = g++
+CPP = c++
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -29,6 +29,7 @@ $(NAME): $(OBJS)
 
 %.o: %.cpp $(HEADERS)
 	$(CPP) $(CPPFLAGS) -c $< -o $@
+
 clean:
 	rm -f $(OBJS) $(NAME)
 

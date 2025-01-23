@@ -6,13 +6,12 @@
 /*   By: ksellami <ksellami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 17:13:25 by ksellami          #+#    #+#             */
-/*   Updated: 2024/11/25 19:05:01 by ksellami         ###   ########.fr       */
+/*   Updated: 2024/11/30 15:34:04 by ksellami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
 
-//setters
 void Contact::setFirstname(std::string firstname)
 {
 	this->firstname = firstname;
@@ -38,28 +37,27 @@ void Contact::setdarkestsecret(std::string darkestsecret)
 	this->darkestsecret = darkestsecret;
 }
 
-//getters
 std::string Contact::getfirstname()
 {
-	return firstname;
+	return (this->firstname);
 }
 
 std::string Contact::getlastname()
 {
-	return lastname;
+	return (this->lastname);
 }
 
 std::string Contact::getnickname()
 {
-	return nickname;
+	return (this->nickname);
 }
 
 std::string Contact::getphonenumber()
 {
-	return phonenumber;
+	return (this->phonenumber);
 }
 
 std::string Contact::getdarkestsecret()
 {
-	return darkestsecret;
+	return (this->darkestsecret);
 }

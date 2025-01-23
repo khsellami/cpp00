@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ksellami <ksellami@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/11/25 16:45:30 by ksellami          #+#    #+#              #
-#    Updated: 2024/11/25 16:59:19 by ksellami         ###   ########.fr        #
+#    Created: 2024/11/29 12:34:48 by ksellami          #+#    #+#              #
+#    Updated: 2024/11/29 13:45:07 by ksellami         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CPP = g++
+CPP = c++
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -25,7 +25,14 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CPP) $(CPPFLAGS) -o $@ $^
 
-%.o: %.cpp
+%.o: %.cpp 
 	$(CPP) $(CPPFLAGS) -c $< -o $@
+
 clean:
 	rm -f $(OBJS) $(NAME)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
